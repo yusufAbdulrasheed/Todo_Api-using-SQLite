@@ -1,0 +1,59 @@
+### Register a new user
+POST http://localhost:7000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "yusufabdulrasheed200@gmail.com",
+    "password": "password123"
+}
+
+### Login an existing user
+POST http://localhost:7000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "yusufabdulrasheed200@gmail.com",
+    "password": "password123"
+}
+
+### Get all tasks for a user
+GET http://localhost:7000/api/todos/ 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0MjI5MzQwLCJleHAiOjE3NTQyMzI5NDB9.Uk_KTFBPZ4lQZAqwr--Qxa3-RhV0EAUYASb71KNPAzo
+
+### Create a new task
+POST http://localhost:7000/api/todos/addTodos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0MjI5MzQwLCJleHAiOjE3NTQyMzI5NDB9.Uk_KTFBPZ4lQZAqwr--Qxa3-RhV0EAUYASb71KNPAzo
+
+# {
+#     "title": "gum",
+#     "description": "watermelon"
+# }
+
+# {
+#     "title": "bread",
+#     "description": "wheat bread"
+# }
+
+# {
+#     "title": "milk",
+#     "description": "almond milk"
+# }
+
+
+
+
+### Update a task
+PUT http://localhost:7000/api/todos/updateTodos/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0MjI3NDI1LCJleHAiOjE3NTQyMzEwMjV9.pnVjNJnn8qitVeXj3kyUmcmtVCd_JIIVpiVcYpXQTgs
+
+# {
+#     "title": "tea",
+#     "description": "almond milk",
+#     "completed": 1
+# }
+
+### Delete a task
+DELETE http://localhost:7000/api/todos/deleteTodos/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0MjI3NDI1LCJleHAiOjE3NTQyMzEwMjV9.pnVjNJnn8qitVeXj3kyUmcmtVCd_JIIVpiVcYpXQTgs
