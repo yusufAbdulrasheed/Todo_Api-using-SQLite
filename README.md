@@ -342,6 +342,3 @@ This Todo API was built as part of my journey in learning backend development wi
 
 If you like this project, please consider giving it a star on GitHub and sharing it with others who might find it useful!
 
-## License
-
-This project is licensed under the MIT License.
